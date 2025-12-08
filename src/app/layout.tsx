@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Lily Suda | Lifestyle, Parenting & Wellness",
+  description: "Join Lily Suda for authentic insights on parenting, luxury wellness, pet care, and living life with intention. Explore blog posts, podcast episodes, and lifestyle tips.",
 };
 
 export default function RootLayout({
