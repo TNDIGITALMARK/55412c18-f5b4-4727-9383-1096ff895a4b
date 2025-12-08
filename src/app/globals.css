@@ -182,10 +182,28 @@
   border-color: hsl(var(--border));
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+/* More selective reset - preserve necessary spacing */
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* Remove default button and input padding only where needed */
+button {
+  padding: 0;
+  background: none;
 }
 
 html {
@@ -212,7 +230,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: hsl(var(--foreground));
+  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+/* First heading in a section should have no top margin */
+h1:first-child, h2:first-child, h3:first-child,
+h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
 }
 
 h1 {

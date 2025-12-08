@@ -13,10 +13,16 @@ export function PodcastCard({ episode }: PodcastCardProps) {
       className="group block rounded-2xl overflow-hidden bg-card border border-border/40 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
     >
       <div className="aspect-square bg-gradient-to-br from-primary/30 via-secondary/20 to-primary/30 relative overflow-hidden flex items-center justify-center">
+        <img
+          src={episode.coverImage}
+          alt={episode.title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative">
-            <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
-            <Play className="relative h-16 w-16 text-primary group-hover:scale-110 transition-transform" fill="currentColor" />
+            <div className="absolute inset-0 bg-primary/30 rounded-full blur-2xl" />
+            <Play className="relative h-16 w-16 text-white drop-shadow-lg group-hover:scale-110 transition-transform" fill="currentColor" />
           </div>
         </div>
         <div className="absolute top-4 left-4">

@@ -15,9 +15,12 @@ export function BlogCard({ post }: BlogCardProps) {
       className="group block rounded-2xl overflow-hidden bg-card border border-border/40 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
     >
       <div className="aspect-[16/9] bg-muted relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-          <span className="text-6xl opacity-20">{post.category === 'parenting' ? '👶' : post.category === 'luxury-health' ? '✨' : post.category === 'pet-care' ? '🐾' : '💫'}</span>
-        </div>
+        <img
+          src={post.image}
+          alt={post.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="p-6">
         <div className="flex items-center gap-2 mb-3">
