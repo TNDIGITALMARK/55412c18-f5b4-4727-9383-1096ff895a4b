@@ -215,9 +215,9 @@ export const podcastEpisodes: PodcastEpisode[] = [
 
 export const featuredContent = {
   hero: {
-    title: 'Living Life with Intention',
-    subtitle: 'Parenting wisdom, luxury wellness, and joy-filled moments',
-    description: 'Welcome to my corner of the internet where I share authentic insights on raising children, prioritizing wellness, and celebrating the little victories—from morning routines to championship pet training.',
+    title: 'Transform from the Inside Out',
+    subtitle: 'Health, fitness, and living from someone with life experience',
+    description: 'Hurling you into a journey of transformation—where health, fitness, and intentional living meet life experience and spreading love. Join me as we discover wellness, authentic parenting, and finding joy in every moment.',
     ctaText: 'Explore Latest Posts',
     ctaLink: '/blog',
   },

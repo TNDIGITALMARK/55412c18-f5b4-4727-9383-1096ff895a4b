@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Instagram, Youtube, Mail, Heart } from 'lucide-react';
+import { Instagram, Youtube, Mail, Heart, Facebook } from 'lucide-react';
+import { SiTiktok } from 'react-icons/si';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -72,7 +73,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-foreground">Connect</h4>
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/littletigerlillylife"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,7 +82,25 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.facebook.com/lilyofthevalleyart"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@tomlyblwl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="TikTok"
+              >
+                <SiTiktok className="h-5 w-5" />
+              </a>
+              <a
+                href="https://youtube.com/@LivingYourBestLifeWoth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

@@ -267,6 +267,70 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Preorder Section */}
+        <section className="py-16 lg:py-24 bg-gradient-to-br from-secondary/10 to-primary/10">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
+                Available for Preorder
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Join the journey with exclusive content designed to transform your life from the inside out
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Adult Book Preorder */}
+              <div className="group relative rounded-3xl bg-card p-8 border border-border/40 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div className="text-6xl mb-6 text-center group-hover:scale-110 transition-transform">
+                  📖
+                </div>
+                <h3 className="text-2xl font-semibold mb-3 text-foreground text-center group-hover:text-primary transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
+                  My Book
+                </h3>
+                <p className="text-muted-foreground text-center mb-6">
+                  A comprehensive guide to transforming your life through health, fitness, and intentional living
+                </p>
+                <button className="w-full px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-lg">
+                  Preorder Now
+                </button>
+              </div>
+
+              {/* Kids Book Preorder */}
+              <div className="group relative rounded-3xl bg-card p-8 border border-border/40 hover:border-secondary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div className="text-6xl mb-6 text-center group-hover:scale-110 transition-transform">
+                  📚
+                </div>
+                <h3 className="text-2xl font-semibold mb-3 text-foreground text-center group-hover:text-secondary-foreground transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
+                  Kids Book
+                </h3>
+                <p className="text-muted-foreground text-center mb-6">
+                  Inspiring stories and lessons to help children develop healthy habits and positive mindsets
+                </p>
+                <button className="w-full px-6 py-3 rounded-full bg-secondary text-secondary-foreground font-semibold hover:bg-secondary/90 transition-all hover:-translate-y-0.5 shadow-lg">
+                  Preorder Now
+                </button>
+              </div>
+
+              {/* Yoga Videos */}
+              <div className="group relative rounded-3xl bg-card p-8 border border-border/40 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div className="text-6xl mb-6 text-center group-hover:scale-110 transition-transform">
+                  🧘‍♀️
+                </div>
+                <h3 className="text-2xl font-semibold mb-3 text-foreground text-center group-hover:text-primary transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
+                  Yoga Videos
+                </h3>
+                <p className="text-muted-foreground text-center mb-6">
+                  Guided yoga sessions designed for all levels—transform your body and mind through movement
+                </p>
+                <button className="w-full px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-lg">
+                  Get Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter Section */}
         <section id="newsletter" className="py-16 lg:py-24 bg-gradient-to-br from-primary/10 to-secondary/10">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
