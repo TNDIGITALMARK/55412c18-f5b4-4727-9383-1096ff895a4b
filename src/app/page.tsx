@@ -88,7 +88,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/generated/hero-background.png"
+                    src="/images/lily/img_3120.png"
                     alt="Lily Suda - Lifestyle and Parenting"
                     className="w-full h-full object-cover"
                   />
