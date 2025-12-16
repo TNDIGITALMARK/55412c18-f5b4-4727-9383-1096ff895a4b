@@ -99,7 +99,7 @@ export function Header() {
         <div className="lg:hidden" role="dialog" aria-modal="true">
           {/* Backdrop overlay with smooth fade-in */}
           <div
-            className={`fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300 ease-out ${
+            className={`fixed inset-0 z-[60] bg-black/30 backdrop-blur-sm transition-opacity duration-300 ease-out ${
               isAnimating ? 'opacity-100' : 'opacity-0'
             }`}
             onClick={handleCloseMenu}
@@ -107,7 +107,7 @@ export function Header() {
           />
           {/* Mobile menu panel with slide-in animation */}
           <div
-            className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 shadow-xl sm:max-w-sm sm:ring-1 sm:ring-border/10 transition-transform duration-300 ease-out ${
+            className={`fixed inset-y-0 right-0 z-[70] w-full overflow-y-auto bg-background px-6 py-6 shadow-xl sm:max-w-sm sm:ring-1 sm:ring-border/10 transition-transform duration-300 ease-out ${
               isAnimating ? 'translate-x-0' : 'translate-x-full'
             }`}
           >
