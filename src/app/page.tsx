@@ -86,11 +86,11 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-secondary/5">
+                <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="/images/lily/img_3120.png"
                     alt="Lily Suda - Lifestyle and Parenting"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-secondary rounded-2xl p-6 shadow-xl max-w-xs">
