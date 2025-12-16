@@ -99,7 +99,7 @@ export function Header() {
         <div className="lg:hidden" role="dialog" aria-modal="true">
           {/* Backdrop overlay with smooth fade-in */}
           <div
-            className={`fixed inset-0 z-[60] bg-black/30 backdrop-blur-sm transition-opacity duration-300 ease-out ${
+            className={`fixed inset-0 z-[9998] bg-black/30 backdrop-blur-sm transition-opacity duration-300 ease-out ${
               isAnimating ? 'opacity-100' : 'opacity-0'
             }`}
             onClick={handleCloseMenu}
@@ -107,11 +107,12 @@ export function Header() {
           />
           {/* Mobile menu panel with slide-in animation */}
           <div
-            className={`fixed inset-y-0 right-0 z-[70] w-full overflow-y-auto bg-background px-6 py-6 shadow-xl sm:max-w-sm sm:ring-1 sm:ring-border/10 transition-transform duration-300 ease-out ${
+            className={`fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-background px-6 py-6 shadow-2xl sm:max-w-sm sm:ring-1 sm:ring-border transition-transform duration-300 ease-out ${
               isAnimating ? 'translate-x-0' : 'translate-x-full'
             }`}
+            style={{ minHeight: '100vh' }}
           >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-8">
               <Link href="/" className="-m-1.5 p-1.5" onClick={handleCloseMenu}>
                 <span className="text-2xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>
                   Lily Suda
@@ -119,7 +120,7 @@ export function Header() {
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-foreground hover:bg-muted transition-colors"
+                className="-m-2.5 rounded-md p-2.5 text-foreground hover:bg-muted transition-colors active:scale-95"
                 onClick={handleCloseMenu}
                 aria-label="Close menu"
               >
@@ -127,31 +128,27 @@ export function Header() {
                 <X className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-border/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-foreground hover:bg-muted transition-colors"
-                      onClick={handleCloseMenu}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <Link
-                    href="#newsletter"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-primary hover:bg-muted transition-colors"
-                    onClick={handleCloseMenu}
-                  >
-                    Subscribe to Newsletter
-                  </Link>
-                </div>
+            <nav className="flex flex-col gap-1">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block rounded-lg px-4 py-3 text-lg font-semibold text-foreground hover:bg-muted transition-colors active:bg-muted/80"
+                  onClick={handleCloseMenu}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <div className="mt-4 pt-4 border-t border-border">
+                <Link
+                  href="#newsletter"
+                  className="block rounded-lg px-4 py-3 text-lg font-semibold text-primary hover:bg-accent transition-colors active:bg-accent/80"
+                  onClick={handleCloseMenu}
+                >
+                  Subscribe to Newsletter
+                </Link>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
       )}
