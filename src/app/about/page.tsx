@@ -113,7 +113,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/lily/img_3159.png"
+                    src="/generated/family-values-warm-moment.png"
                     alt="Lily Suda with family"
                     className="w-full h-full object-cover"
                   />
