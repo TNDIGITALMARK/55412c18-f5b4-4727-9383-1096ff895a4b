@@ -251,7 +251,7 @@ export default function HomePage() {
                   <span className="text-secondary text-2xl">★★★★★</span>
                 </div>
                 <p className="text-foreground mb-4 leading-relaxed">
-                  "Bella's training journey inspired me to start training my own dog. The techniques are practical, proven, and easy to implement. Thank you!"
+                  "Bella's training journey inspired me to start training my own cat. The techniques are practical, proven, and easy to implement. Thank you!"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold">
